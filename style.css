@@ -78,6 +78,10 @@ select {
   }
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 main {
     max-width: 900px;
     width: 95%;
@@ -87,7 +91,6 @@ main {
     grid-template-columns: 8fr 4fr;
     border: 5px solid #1e688f;
     border-radius: 2px;
-    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
@@ -213,7 +216,7 @@ figure img {
     font-size: 19px;
 }
 
-a {
+main a {
     text-decoration: none;
     transition: all ease .5s;
     color: #517b8c;
@@ -221,4 +224,27 @@ a {
 
 a:hover {
     color: #103447;
+}
+
+footer {
+    background-color: #1e688f;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: all ease .5s;
+}
+
+footer img {
+    width: 140px;
+    color: #fff;
+    fill: red;
 }

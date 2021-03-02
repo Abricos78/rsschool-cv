@@ -1,0 +1,255 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+ animation-duration: 0.01ms !important;
+ animation-iteration-count: 1 !important;
+ transition-duration: 0.01ms !important;
+ scroll-behavior: auto !important;
+  }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: 900px;
+    width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas: 'description personalInfo';
+    grid-template-columns: 8fr 4fr;
+    border: 5px solid #1e688f;
+    border-radius: 2px;
+}
+
+h1, h2, h3 {
+    color: #517b8c;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: .5px;
+    margin: 10px 0;
+}
+
+.material-icons {
+    line-height: inherit !important;
+}
+
+.personalInfo, .description {
+    text-align: left;
+    width: 100%;
+}
+
+a:hover {
+    color: #103447;
+}
+
+/* ---------------- Personal Info ---------------- */
+
+.personalInfo {
+    background-color: #ececec;
+    padding: 25px 10px;
+    grid-area: personalInfo;
+    min-width: 270px;
+}
+
+figure img {
+    margin: 10px auto;
+    border-radius: 15%;
+    width: 150px;
+}
+
+.personalInfo .title {
+    width: 90%;
+    margin: 25px auto;
+    gap: .5em;
+}
+
+.personalInfo .title div {
+    background-color: #216888;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.personalInfo .title div i {
+    font-size: 18px;
+    padding-right: 1px;
+    padding-top: 1px;
+}
+
+.personalInfo .title .line {
+    border-radius: 0;
+    background-color: #216888;
+    flex-grow: 1;
+    border: 0.5px solid #216888;
+}
+
+.personalInfo .contacts ul {
+    padding: 0;
+}
+
+.personalInfo .contacts li {
+    list-style-type: none;
+}
+
+.personalInfo .hardSkills li {
+    color: #517b8c;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+/* ----------------- Description ---------------- */
+
+.description {
+    padding: 25px;
+    background-color: #fefefe;
+    grid-area: description;
+}
+
+.icon {
+    border-radius: 50%;
+    background-color: #216888;
+    color: #fff;
+    width: 35px;
+    text-align: center;
+}
+
+.title {
+    margin: 25px 0 20px 0;
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.title .line {
+    border: 1px solid #e4e4e4;
+    flex-grow: 1;
+    background-color: #e4e4e4;
+}
+
+.description li {
+    color: #517b8c;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+main a {
+    text-decoration: none;
+    transition: all ease .5s;
+    color: #517b8c;
+}
+
+footer {
+    background-color: #1e688f;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: all ease .5s;
+}
+
+footer img {
+    width: 140px;
+    color: #fff;
+    fill: red;
+}

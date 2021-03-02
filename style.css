@@ -78,6 +78,10 @@ select {
   }
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 main {
     max-width: 900px;
     width: 95%;
@@ -87,7 +91,6 @@ main {
     grid-template-columns: 8fr 4fr;
     border: 5px solid #1e688f;
     border-radius: 2px;
-    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
@@ -96,7 +99,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bolder;
     text-align: center;
     margin-bottom: 15px;
@@ -126,6 +129,12 @@ p {
     text-align: left;
     width: 100%;
 }
+
+a:hover {
+    color: #103447;
+}
+
+/* ---------------- Personal Info ---------------- */
 
 .personalInfo {
     background-color: #ececec;
@@ -167,6 +176,22 @@ figure img {
     border: 0.5px solid #216888;
 }
 
+.personalInfo .contacts ul {
+    padding: 0;
+}
+
+.personalInfo .contacts li {
+    list-style-type: none;
+}
+
+.personalInfo .hardSkills li {
+    color: #517b8c;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+/* ----------------- Description ---------------- */
+
 .description {
     padding: 25px;
     background-color: #fefefe;
@@ -199,26 +224,32 @@ figure img {
     margin-bottom: 15px;
     font-size: 19px;
 }
-.personalInfo .contacts ul {
-    padding: 0;
-}
 
-.personalInfo .contacts li {
-    list-style-type: none;
-}
-
-.personalInfo .hardSkills li {
-    color: #517b8c;
-    margin-bottom: 15px;
-    font-size: 19px;
-}
-
-a {
+main a {
     text-decoration: none;
     transition: all ease .5s;
     color: #517b8c;
 }
 
-a:hover {
-    color: #103447;
+footer {
+    background-color: #1e688f;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: all ease .5s;
+}
+
+footer img {
+    width: 140px;
+    color: #fff;
+    fill: red;
 }

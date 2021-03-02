@@ -99,7 +99,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bolder;
     text-align: center;
     margin-bottom: 15px;
@@ -129,6 +129,12 @@ p {
     text-align: left;
     width: 100%;
 }
+
+a:hover {
+    color: #103447;
+}
+
+/* ---------------- Personal Info ---------------- */
 
 .personalInfo {
     background-color: #ececec;
@@ -170,6 +176,22 @@ figure img {
     border: 0.5px solid #216888;
 }
 
+.personalInfo .contacts ul {
+    padding: 0;
+}
+
+.personalInfo .contacts li {
+    list-style-type: none;
+}
+
+.personalInfo .hardSkills li {
+    color: #517b8c;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+/* ----------------- Description ---------------- */
+
 .description {
     padding: 25px;
     background-color: #fefefe;
@@ -202,28 +224,11 @@ figure img {
     margin-bottom: 15px;
     font-size: 19px;
 }
-.personalInfo .contacts ul {
-    padding: 0;
-}
-
-.personalInfo .contacts li {
-    list-style-type: none;
-}
-
-.personalInfo .hardSkills li {
-    color: #517b8c;
-    margin-bottom: 15px;
-    font-size: 19px;
-}
 
 main a {
     text-decoration: none;
     transition: all ease .5s;
     color: #517b8c;
-}
-
-a:hover {
-    color: #103447;
 }
 
 footer {

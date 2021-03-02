@@ -98,6 +98,8 @@ h1, h2, h3 {
 h1 {
     font-size: 32px;
     font-weight: bolder;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -129,12 +131,40 @@ p {
     background-color: #ececec;
     padding: 25px 10px;
     grid-area: personalInfo;
+    min-width: 270px;
 }
 
-.personalInfo img {
+figure img {
     margin: 10px auto;
     border-radius: 15%;
     width: 150px;
+}
+
+.personalInfo .title {
+    width: 90%;
+    margin: 25px auto;
+    gap: .5em;
+}
+
+.personalInfo .title div {
+    background-color: #216888;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.personalInfo .title div i {
+    font-size: 18px;
+    padding-right: 1px;
+    padding-top: 1px;
+}
+
+.personalInfo .title .line {
+    border-radius: 0;
+    background-color: #216888;
+    flex-grow: 1;
+    border: 0.5px solid #216888;
 }
 
 .description {
@@ -149,7 +179,6 @@ p {
     color: #fff;
     width: 35px;
     text-align: center;
-    vertical-align: center;
 }
 
 .title {
@@ -165,18 +194,31 @@ p {
     background-color: #e4e4e4;
 }
 
-li {
+.description li {
+    color: #517b8c;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+.personalInfo .contacts ul {
+    padding: 0;
+}
+
+.personalInfo .contacts li {
+    list-style-type: none;
+}
+
+.personalInfo .hardSkills li {
     color: #517b8c;
     margin-bottom: 15px;
     font-size: 19px;
 }
 
-li a {
+a {
     text-decoration: none;
     transition: all ease .5s;
     color: #517b8c;
 }
 
-li a:hover {
+a:hover {
     color: #103447;
 }
